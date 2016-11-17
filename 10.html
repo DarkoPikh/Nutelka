@@ -1,0 +1,36 @@
+﻿<html>
+<head>
+<title>
+...Random...
+</title>
+</head>
+
+<body bgcolor="black">
+
+<table border="1" height="300px" width="600px" align="center">
+<tr align="center" bgcolor="white">
+<td colspan="2"> <p id="demo">0</p> </td>
+</tr>
+<tr align="center" bgcolor="black">
+<td width="300"> <button onclick="myFunction()">Random</button> </td>
+<td> <button onclick="myFunction1()">Reload</button> </td>
+</tr>
+</table>
+
+<script>
+var value1 = (y)
+var min=50; max=100;
+var x= Math.random();
+var y = (max-min)*x+min;
+function myFunction()
+{
+value1=(y)
+document.getElementById("demo").innerHTML = value1;
+} ;
+function myFunction1() 
+{
+    location.reload();
+}
+</script>
+</body>
+</html>
