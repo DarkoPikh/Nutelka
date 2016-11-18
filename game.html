@@ -1,0 +1,58 @@
+﻿<html>
+
+	<head>
+	
+		<title>
+			Rendom Game
+		</title>
+		<style>
+		h1 {color:red;}
+		</style>
+	</head>
+	
+	<body bgcolor="black">
+	
+	
+	<h1> Play and Win </h1>
+	
+		<input type="text" id="number"></input>
+		
+		<button onclick="ok()">Try again</button>
+		
+		
+		<script>
+		
+			var random = Math.floor(Math.random()*100);
+			
+			console.log(random)
+			
+			function ok()
+			{
+			
+			var number = document.getElementById('number').value;
+			
+			if (random==number)
+			{
+			   alert("Перемога.Спробуй знову")
+			}
+			
+			else if (random>number)
+			{
+			   alert("Замало")
+			}
+			
+			else if (random<number)
+			{
+			   alert("Забагато")
+			}
+			
+			}
+			
+		</script>
+		
+		
+	</body>
+	
+	
+	
+</html>
