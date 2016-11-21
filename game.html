@@ -15,35 +15,43 @@
 	
 	<h1> Play and Win </h1>
 	
-		<input type="text" id="number"></input>
+		<input type="text" id="demo1"></input>
 		
 		<button onclick="ok()">Try again</button>
 		
+		<button onclick="findrandom()">Find</button>
+		
 		
 		<script>
-		
+		    var max = 100; min = 1;
 			var random = Math.floor(Math.random()*100);
 			
 			console.log(random)
 			
+			  function findrandom()
+                {
+              document.getElementById("demo1").value=random;
+                }
+				
 			function ok()
 			{
-			
-			var number = document.getElementById('number').value;
+			   var number = Math.floor(Math.random()*100);
+			   console.log(number);
+		      document.getElementById('demo1').value=number;
 			
 			if (random==number)
 			{
-			   alert("Перемога.Спробуй знову")
+			   console.log("Перемога.Спробуй знову")
 			}
 			
 			else if (random>number)
 			{
-			   alert("Замало")
+			   console.log("Замало")
 			}
 			
 			else if (random<number)
 			{
-			   alert("Забагато")
+			   console.log("Забагато")
 			}
 			
 			}
